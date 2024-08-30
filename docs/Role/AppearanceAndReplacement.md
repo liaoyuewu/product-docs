@@ -27,7 +27,9 @@
 
 首先我们需要找到需要更换的资源ID。
 
-![](https://cdn.233xyx.com/online/DeWLk9IfmgFk1694158606115.png)        
+| 中文示例                                                   | 英文示例                                             |
+| ---------------------------------------------------------- | ---------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240830160024672.png) | ![](https://arkimg.ark.online/msedge_6susteGdXq.png) |
 
 在【本地资源库】的【角色/NPC】列表中找到【基础人形形象】。
 
@@ -67,11 +69,13 @@ export default class NewScript extends Script {
 
 效果图：
 
-<video controls src="https://cdn.233xyx.com/online/9SRLVATvoRRv1694158606115.mp4"></video>
+<video controls src="https://arkimg.ark.online/20240830-163009.mp4"></video>
 
 ### 多足形象换装
 
-![](https://cdn.233xyx.com/online/dmdDi0YD6Zi41694158606114.png)   
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240830163132335.png) | ![](https://arkimg.ark.online/image-20240830163356322.png) |
 
 在【本地资源库】的【角色/NPC】列表中找到【多足形象】。
 
@@ -83,7 +87,7 @@ export default class NewScript extends Script {
 
 效果图：
 
-<video controls src="https://cdn.233xyx.com/online/JjKOidyHliLf1694158606114.mp4"></video>
+<video controls src="https://arkimg.ark.online/20240830-163523.mp4"></video>
 
 注意事项：
  - 如果多足形象发生抖动状况，是由于客户端修改形象后，没有同步到服务器，导致客户端与服务器的胶囊体大小不一致，从而进行拉扯。需要添加syncStyle()函数同步一下即可。
@@ -102,7 +106,9 @@ InputUtil.onKeyDown(Keys.One, () => {
 
 ## 高级人形形象形象换装
 
-![](https://cdn.233xyx.com/online/VC5yG2UL3L9p1694158606115.png)
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/a164a8e9a419463ba1338172c0ce5f50_365221814.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/2da64c96592d41dfbdeeed6badfb9db1_365221818.webp)|
 
 切换高级人形形象与在角色编辑器内的操作一样，需要先切换角色设定的角色效果。
 
@@ -1508,7 +1514,9 @@ chara.description.advance.bodyFeatures.feet.feetOverallScale = 1
 
 ### 角色数据换装
 
-![](https://cdn.233xyx.com/online/d9qUo99hEBde1694169509299.png)    
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240830163745333.png) | ![](https://arkimg.ark.online/image-20240830163828155.png) |
 
 角色数据说明：角色数据是服装信息、捏脸数据、插槽数据等综合一起的一个文件。
 
