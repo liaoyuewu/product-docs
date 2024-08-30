@@ -169,9 +169,9 @@ console.log("交互物当前交互角色：" + chair.getCurrentCharacter() ? cha
 
 下列示例中展示角色与一把椅子进行交互。先在【对象管理器】中制作一把椅子：将【交互物】拖入场景后将交互动画设置为”坐下玩手机“，交互插槽为”臀部“。在下方挂载椅子模型并修改至合适的相对位置。将脚本挂载至【交互物】下方，将代码添加到脚本onStart方法中。代码获取挂载的【交互物】对象，并添加了2个按键方法，每次按下键盘“1”键，就会调用`startInteract`接口与【交互物】进行交互。每次按下键盘“2”键，就会调用`endInteract`接口退出与【交互物】的交互。
 
-| 中文示例    | 英文示例                                                         |
-| ----------- | ------------------------------------------------------------ |
-|![img](https://qn-cdn.233leyuan.com/athena/online/b1c3da16ed0f4edb89cebfecb9fa883c_365702461.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/7949913c6f0b4f51a0a20e3906ebfc1c_365702468.webp)|
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240830112339810.png) | ![](https://arkimg.ark.online/image-20240830112419328.png) |
 
 ```TypeScript
 let chair = this.gameObject as Interactor;
