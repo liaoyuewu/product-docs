@@ -94,9 +94,9 @@ export default class NewScript extends Script {
 
 最后复制我们放置在场景中的角色对象的ID，并将脚本中的角色对象的ID进行替换，即可实现效果。
 
-| 中文示例    | 英文示例                                                         |
-| ----------- | ------------------------------------------------------------ |
-|![img](https://qn-cdn.233leyuan.com/athena/online/c5a4add751364f34acff3b2395d59034_365403024.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/a6e15d0e8864423a9405cae053cc4139_365403026.webp)|
+| 中文示例                                                     | 英文示例                                                   |
+| ------------------------------------------------------------ | ---------------------------------------------------------- |
+| ![img](https://qn-cdn.233leyuan.com/athena/online/c5a4add751364f34acff3b2395d59034_365403024.webp) | ![](https://arkimg.ark.online/image-20240830154911127.png) |
 
 效果图：
 
