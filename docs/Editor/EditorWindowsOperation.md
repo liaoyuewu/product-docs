@@ -224,110 +224,6 @@
 
 <video controls src="https://cdn.233xyx.com/athena/online/0aa0f194783e4984894bea3a77693726.mp4"></video>
 
-### 3. 本地资源库
-
-![](https://cdn.233xyx.com/athena/online/8312fdb150064b20a5554103474859d7_12328087.webp)
-
-本地资源库提供了各种资源用以搭建各式各样的场景。
-左侧 tab 切换分别是美术资源、预制体、游戏功能对象、收藏、历史记录、我的资源。
-
-- 美术资源：用以搭建游戏世界。
-  - 目录级别：美术资源——资源类型——主题。
-- 预制体：包含复杂结构的对象组合。
-  - 目录级别：预制体——主题。。
-- 游戏功能对象：有某种通用能力的对象，用以实现游戏逻辑
-  - 目录级别：游戏功能对象——资源类型。
-- 收藏：供创作者自主收藏和使用资源。
-  - 目录级别：收藏——资源类型——主题。
-  - 创作者可通过资源预览窗口中的收藏按钮对指定资源进行收藏操作。
-- 历史记录：记录最后使用的 100 个资源。
-  - 目录级别：历史记录——资源类型——主题。
-  - 信息存在本地，用户下次打开时的记录与之前一致。
-- 我的资源：存放创作者上传的资源。
-  - 目录级别：我的资源——资源类型。
-
-#### 3.1 资源下载与预览
-
-编辑器中的资源**存在云端**。需要**点击资源**进行下载。
-点击下载完成的资源缩略图右上角放大镜，出现预览窗口对资源进行预览，静态模型、特效、动画支持**视口预览**。
-若预制体内带有脚本，缩略图左上角将显示书页图标。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnN3IOQulKioAEqEnMc4aCfd.png)
-
-其中，音效资源支持在资源缩略图中进行播放试听。
-
-![](https://cdn.233xyx.com/1684490737758_200.gif)
-
-##### 预览窗口相关：
-
-1. 预览窗口中标签显示规则变化，隐藏了之前用以模糊搜索的**搜索标签**，新增**显示标签**，点击显示标签，可在资源库进行同类标签的搜索（暂时显示标签还未进行配置，配置后可看到各资源对应的显示标签）。
-2. 隐藏了未配置注释的注释属性。
-3. 支持通过方向键切换预览资源。
-4. 对于可以播放的资源，播放入口如下图所示。
-
-![](https://cdn.233xyx.com/1681957109950_611.png)
-
-其中，音效资源支持在资源预览窗口中控制播放进度(其他可播放资源的播放功能优化将在后续版本上线)。
-![](https://cdn.233xyx.com/1684490867541_125.gif)
-
-每次进入工程时，会花费几秒的时间从服务器拉取资源的相关信息，用以资源的展示、筛选和搜索操作。
-
-#### 3.2 资源使用
-
-不同的资源有不同的使用方式，详情请参考资源相关手册。
-右键资源可以复制资源 ID 和名称，方便在脚本中引用。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnMXxwgcXOmIf4XfBe87fjPf.png)
-
-#### 3.3 筛选相关
-
-支持对资源的**风格**和**分类**进行筛选。
-风格的筛选通过下拉框选择，支持多选，结果取**并集**。
-不同的资源类型有不同的风格，在同一类型下切换主题时，筛选不会清空。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnL0JI5oy2VX5zrDOcL804bh.png)
-
-分类的筛选通过标签选择，支持多选，未显示完的标签可通过下拉按钮展开，结果取**并集**。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnko4H5zv1tovjN1kzWx9bUc.png)
-
-分类筛选将对所选标签进行排列，取消某分类标签筛选时，该标签回归之原来位置。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnl0ggwAhwaIeSIItrdit8Ac.png)
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnVWNM36sTMv2417FaY9KCMc.png)
-
-风格与分类筛选条件之间取**交集**。
-在切换**同一资源类型的不同主题**时，风格的筛选条件会被保留，分类的筛选条件会被移除。
-支持搜索后进行筛选。
-
-#### 3.4 搜索相关
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcngOPXaOUeOnEFfPSUpJ7Uzd.png)
-
-可以通过资源名称、资源 ID、资源标签进行模糊搜索。
-结束搜索状态时，会初始化导航目录，并清空当前的分类筛选，但风格筛选会在下次进入搜索前的目录时保留。
-
-#### 3.5 其他
-
-资源导航右侧支持拖动以调整区域大小。
-
-- 拖拽存在宽度最小值与最大值，最小值一行显示四个资源，最大值显示两个资源。
-
-![](https://cdn.233xyx.com/athena/online/18f21ce57b824d8bb2606e3b9d80ead5_12328510.webp)
-
-资源导航支持快捷收起/展开。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnLC0o8uYV63PJCr8Vek9yHA.png)
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnMKgLsopng8YxqD0dkrKGKc.png)
-
-游戏功能对象支持通过 tips 跳转至对应产品手册。
-
-- 鼠标悬浮至功能对象时，按住 alt 后可点击蓝色字体，从而跳转至对应手册。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnESnsILbC82Gv9X3gLfjdag.png)
-
 ### 4. 主视口
 
 ![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcntJCC8Gdef0b29vWVoXvHag.png)
@@ -349,49 +245,50 @@ WASD+ 鼠标右键，可移动摄像机并调整摄像机朝向（摄像机位�
 
 #### 4.3 主视口右键菜单
 
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnPHc3qnW9Xv7FWcV8llbXMe.png)
+|中文示例|英文示例|
+|-----|-----|
+|![](https://qn-cdn.233leyuan.com/athena/online/405e8afeddd24f808e3373404ae67a9c_371306603.webp)|![](https://qn-cdn.233leyuan.com/athena/online/99d1255748e34b24911c850e62a1d0cc_371306602.webp)|
 
 只有当选中某一对象时，主视口中的右键功能才可使用（粘贴除外）。
+
 复制、粘贴等基本操作此处不再说明。
-从对象某方观察：
+
+**从对象某方观察：**
 - 将摄像机移动至该对象的某一个方位，方便从该方位观察此对象。
 
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnobo82c2jBZOtwozMnVh8Hf.png)
-
-对象聚焦：
-  - 进入对象聚焦状态后，右键旋转摄像机角度时，摄像机将**围绕对象**进行旋转，方便从不同方位观察对象的细节。
-  - 可通过快捷键 F，或主视口右键菜单中的“对象聚焦”，或者双击对象管理器中的某个对象进入对象聚焦状态。
+**对象聚焦：**
+- 进入对象聚焦状态后，右键旋转摄像机角度时，摄像机将**围绕对象**进行旋转，方便从不同方位观察对象的细节。
+- 可通过快捷键 F，或主视口右键菜单中的“对象聚焦”，或者双击对象管理器中的某个对象进入对象聚焦状态。
 移动对象至摄像机所在位置：
-  - 将此对象移动至当前摄像机的位置，使得摄像机与当前对象锚点重合，修改的是对象的**位置**。
+- 将此对象移动至当前摄像机的位置，使得摄像机与当前对象锚点重合，修改的是对象的**位置**。
 旋转对象至摄像机所对朝向：
-  - 将此对象旋转至当前摄像机的朝向，修改的是对象的**旋转角度**。
-向下吸附：
-  - 将此对象向地面吸附，规则为**以包围盒触碰至地面为准**。
-  - 若对象的包围盒已经和地面接触或者处于地面**下方，**则该操作无效。
+- 将此对象旋转至当前摄像机的朝向，修改的是对象的**旋转角度**。
+
+**向下吸附：**
+- 将此对象向地面吸附，规则为**以包围盒触碰至地面为准**。
+- 若对象的包围盒已经和地面接触或者处于地面**下方，**则该操作无效。
 
 #### 4.4 视图选择器
 
 ![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnq9Mhzro2tfqxGMpMSUMNCe.png)
 
-基础面（6 个）：包含前、后、左、右、上、下；
-角面（8 个）：相邻三面所夹的角面，包含前上左、前上右、前下左、前下右、后上左、后上右、后下左、后下右；
-单击视图选择器的某个**基础面/角面**，将旋转摄像机的位置和方向，将视图切换至该面。
-按住鼠标左键，可拖拽视图选择器在主视口的位置。
+- 基础面（6 个）：包含前、后、左、右、上、下；
+- 角面（8 个）：相邻三面所夹的角面，包含前上左、前上右、前下左、前下右、后上左、后上右、后下左、后下右；
+- 单击视图选择器的某个**基础面/角面**，将旋转摄像机的位置和方向，将视图切换至该面。
+- 按住鼠标左键，可拖拽视图选择器在主视口的位置。
 
 #### 4.5 场景模式和预制体模式
 
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnpQoXeuLaL6sODaxPhjwoBe.png)
+|中文示例|英文示例|
+|-----|-----|
+|![](https://qn-cdn.233leyuan.com/athena/online/d1ab51f943684071813fac2c244e7197_371313826.webp)|![](https://qn-cdn.233leyuan.com/athena/online/9bfec31ddc854dcb978a5b2e6ed9c43d_371315308.webp)|
 
 主视口分为两种编辑模式，场景模式与预制体模式：
 - 场景模式下，编辑的是**游戏场景**。
 - 预制体模式下，编辑的是**某个预制体**。
 预制体模式下编辑预制体后，可点击工程内容中的保存按钮或切换至场景模式保存预制体。
 
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcntvAgwUK9NjIjidiH4L4Hig.png)
-
 当双击预制体文件或者新建预制体时，上图中的切换按钮将会出现，单击即可模式切换；也可以通过主视口右上角关闭按钮关闭预制体编辑界面。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcntKtojyJyCJoKGE7Ck44Ujf.png)
 
 ### 5. 工程内容
 
@@ -399,8 +296,6 @@ WASD+ 鼠标右键，可移动摄像机并调整摄像机朝向（摄像机位�
 
 工程内容目的是管理与编辑此工程使用的文件。
 左侧目录为文件类型分类，不同分类的功能有所区别，同时左侧也是导航区域，可通过左侧导航快捷访问**文件夹路径**。
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcn952MNg4ED23joNEn2oaHoe.png)
 
 左侧目录同时支持文件夹的右键菜单操作，下面会说明各类型下文件夹的功能。
 
@@ -476,8 +371,6 @@ WASD+ 鼠标右键，可移动摄像机并调整摄像机朝向（摄像机位�
 
 - 右键菜单——右键脚本文件
 
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnneX3ojMDR79vZe1apd2Xod.png)
-
 - 复制、粘贴等基本操作此处不再说明。
 - 选择最近引用对象
 
@@ -508,34 +401,6 @@ WASD+ 鼠标右键，可移动摄像机并调整摄像机朝向（摄像机位�
   - 一些基本的操作，此处不进行说明
 
 ![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnzOsVMKyO1QhCRMvlBZRm7c.png)
-
-#### 5.6 预制体
-
-- 预制体在工程内容中以文件夹形式存在
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnHoHeFwQd6a73ftbp3zqeLh.png)
-
-- 该文件夹包含了一个预制体文件，一个脚本文件夹与 UI 文件夹
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnOnx9xUTLY1LWOQSfWGyEDe.png)
-
-- 双击**预制体文件**，主视口进入预制体编辑状态
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnwQqa5KxwKhoQrLJVKsjFcf.png)
-
-- **修改后**，工程内容预制体界面出现保存按钮
-
-![](https://wstatic-a1.233leyuan.com/productdocs/static/boxcnZ59MhxS37NjatpO7cIfOVf.png)
-
-- 预制体的右键功能与脚本大体一致，不同的点如下
-
-  - 预制体界面不支持创建文件夹
-  - 预制体文件夹中的脚本与 UI 文件夹**不支持删除、重命名、粘贴操作**
-  - 预制体文件夹支持导出功能，方便**对于整个预制体进行复用**
-- 预制体的使用
-
-  - 将**预制体文件（非文件夹）**拖入主视口或对象管理器中即可生效
-- 预制体详细功能请参考预制体使用手册[预制体功能说明](https://meta.feishu.cn/wiki/wikcnwUnCTbhvEDchl5oqeF89lf)
 
 #### 5.7 UI文件
 
