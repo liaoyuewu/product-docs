@@ -37,10 +37,10 @@
 
 #### 效果展示
 *使用官方提供给的加载界面：*
-![image](https://github.com/user-attachments/assets/8059fadc-f789-4b7b-9be6-1d6f619d5a02)
+![image](https://qn-cdn.233leyuan.com/athena/online/2cdd764e19ca4ff79182bf0d1d28257f_374668625.webp)
 
 *使用自定义加载界面：*
-![image](https://github.com/user-attachments/assets/9236e03f-53db-4446-a913-07e8e72222df)
+![image](https://qn-cdn.233leyuan.com/athena/online/e34cfbcd0b774a758e261751b04d94ba_374668626.webp)
 
 
 #### 简单介绍
@@ -57,42 +57,41 @@
 - **场景加载界面**：对于某些场景，创作者不希望使用默认的加载界面，可以进行单独配置
   - **使用默认**：创作者未单独配置场景的加载界面，则使用默认加载界面
   - **自定义场景加载界面**：创作者可对指定场景的加载界面进行编辑
- 
+
 > 例子：当创作者开发了一个包含3个场景A、B、C的游戏，创作者在【默认加载界面】选择【自定义默认加载界面】并进行了编辑，此时提审通过后A、B、C三个场景都会应用此次编辑的配置。若创作者在此基础上，又在【场景加载界面】选择了场景A及【自定义场景加载界面】并进行编辑，提审通过后A将单独应用此次的配置。
 
 #### 操作步骤
 
 1. 提审游戏，进入游戏信息的编辑页面，在【其他设置-场景信息】的右上角找到【编辑】按钮
-![image](https://github.com/user-attachments/assets/ebef1c6b-c9cb-4886-9a4f-6713a8cad4b8)
+![image](https://qn-cdn.233leyuan.com/athena/online/f07f2f67ea7f46649d4c47bd3505533c_374668627.webp)
 
 2. 选择对默认加载界面进行编辑
    1. 选择使用官方提供：此时只能查看，不能编辑文案或是修改背景图
-![image](https://github.com/user-attachments/assets/bdcfa046-55dd-4ae1-a593-93109293bbac)
+![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)
 
    2. 选择自定义默认加载界面：此时可上传背景图，推荐尺寸1080x1920，大小不要超过1M；可编辑至多5条文案，每条文案不能超过30字，并在预览图中查看文案轮播效果
-![image](https://github.com/user-attachments/assets/3feaf86d-397f-4c15-b7db-2f9a21562bab)
+![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)
 
    3. 点击一键同步素材，可将默认语言的加载背景图同步至其他语言；点击一键翻译，可将默认语言的加载文案同步至其他语言。注意有些简短的中文翻译成其他语言后可能会超过长度限制哦！
-![image](https://github.com/user-attachments/assets/77d30a4a-bed1-4a7f-91fb-80b45c86931d)
+![image](https://qn-cdn.233leyuan.com/athena/online/923750b502264deaa465b83b0da1a749_374668630.webp)
 
 3. 编辑场景加载界面
    1. 使用默认配置：表示该场景不进行单独配置，使用当前游戏的默认加载界面
-![image](https://github.com/user-attachments/assets/d36a4556-7270-47b1-8f9b-0c9e2314d80a)
+![image](https://qn-cdn.233leyuan.com/athena/online/88bb594fec8c498aa2f43f367d898d71_374668631.webp)
 
    2. 自定义场景加载界面：
-![image](https://github.com/user-attachments/assets/072f474f-8fc4-4771-8970-546240e1bd0f)
+![image](https://qn-cdn.233leyuan.com/athena/online/4ac8e130336d429a81409505f6693e4f_374668632.webp)
 
 4. 点击【提交】按钮，提交审核，此时在【其他设置-场景信息】出现【审核中】标志，审核中不可再进行编辑，游戏提审不必等待加载界面的审核完成，若游戏上线后，加载界面处于审核中或未过审，游戏将使用官方配置，加载界面审核通过后将直接应用在游戏中。
-![image](https://github.com/user-attachments/assets/cc520dc3-6962-42d2-bf5d-dbcdb1d8dbe8)
+![image](https://qn-cdn.233leyuan.com/athena/online/c3556a69e8f341dbb0dd168530e775e0_374668633.webp)
 
 5. 审核成功或审核失败：创作者将在系统通知中收到加载界面的审核结果
-![image](https://github.com/user-attachments/assets/2fe3dc1f-9d97-44a8-9eca-b30f772699e5)
-![image](https://github.com/user-attachments/assets/58bd4959-b254-43c4-bd82-a4ceb7941251)
-![image](https://github.com/user-attachments/assets/31a1184f-a094-4a1d-a34c-49f6987f998a)
-![image](https://github.com/user-attachments/assets/872f5f80-b7c7-45c4-a9df-909e0d84e2f9)
+![image](https://qn-cdn.233leyuan.com/athena/online/e6073341b7fe400f8ce9ba78ca8c0365_374668634.webp)
+![image](https://qn-cdn.233leyuan.com/athena/online/41c0e9013db84c87b05a9f1b397d3a0a_374668637.webp)
+![image](https://qn-cdn.233leyuan.com/athena/online/0130b32f13514d5699f562469790a270_374668635.webp)
+![image](https://qn-cdn.233leyuan.com/athena/online/142d80ce097b4623b76137e6204e7930_374668636.webp)
 6. 游戏发版后，创作者可以点击版本管理，操作处会有【编辑加载界面】的按钮，点击可打开加载界面的编辑窗口。若当前版本游戏存在处于审核中的加载界面配置，则不能提交。
-   ![image](https://github.com/user-attachments/assets/8d01e34c-f7f5-462f-8fb4-a9228c8a7678)
-
+![image](https://qn-cdn.233leyuan.com/athena/online/49b2b8558a4f40469dddb70606dc4bb2_374668638.webp)
 
 ## 版本更新
 
