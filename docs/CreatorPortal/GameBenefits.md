@@ -164,7 +164,7 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
          
       3. 底部建议以背景色做渐变过渡
          
-    [img](https://arkimg.ark.online/1725523305971-79.webp)
+    ![img](https://arkimg.ark.online/1725523305971-79.webp)
    
     - 活动背景颜色：模板整体的背景色，建议和banner图片色系匹配；
       
@@ -192,9 +192,9 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
     
 4. 分享描述
    
-  1. 分享到外部第三方平台（微信、QQ）时会展示分享标题与分享描述，分享标题默认展示活动名称，分享描述为下方展示的描述文案。
+   - 分享到外部第三方平台（微信、QQ）时会展示分享标题与分享描述，分享标题默认展示活动名称，分享描述为下方展示的描述文案。
      
-  2. 建议体现核心主题和奖励，简短有吸引力
+  - 建议体现核心主题和奖励，简短有吸引力
      
   ![img](https://arkimg.ark.online/1725523305971-82.webp)
 
