@@ -145,30 +145,19 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
 1. 创建活动（基本信息）
    
    - 活动名称：会直接展示在各个运营位，建议突出活动主题和奖励内容，吸引用户点进活动；
-     
    - 活动开始时间：
-     
      1.  玩家可以开始参加活动的时间
-        
      2.  审核通过状态下，部分资源位会根据该时间展示到C端
-        
     - 活动结束时间：活动正式关闭的时间，部分资源位会根据该时间结束展示到C端；
-      
     - 模板类型：选择【签到活动】；
-      
     - 图片：
-      
       1. 模板的背景banner图片
-         
       2. 建议尺寸720*430，png或jpg，大小200kb以内
-         
       3. 底部建议以背景色做渐变过渡
-         
     ![img](https://arkimg.ark.online/1725523305971-79.webp)
-   
     - 活动背景颜色：模板整体的背景色，建议和banner图片色系匹配；
-      
-2. 活动规则-签到奖励
+
+3. 活动规则-签到奖励
    
    - 签到奖励要求天数：签到规则设计，这里是用户领取下方奖励所需的连续签到天数 ；
      
@@ -178,7 +167,7 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
      
     ![img](https://arkimg.ark.online/1725523305971-80.webp)
    
-3. 活动规则-活动说明
+4. 活动规则-活动说明
    
    - 活动说明：告诉用户本次活动的要求和基本信息，通常包括：
      
@@ -190,7 +179,7 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
      
      ![img](https://arkimg.ark.online/1725523305971-81.webp)
     
-4. 分享描述
+5. 分享描述
    
    - 分享到外部第三方平台（微信、QQ）时会展示分享标题与分享描述，分享标题默认展示活动名称，分享描述为下方展示的描述文案。
      
