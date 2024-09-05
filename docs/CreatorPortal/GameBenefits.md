@@ -179,6 +179,7 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
 
 ### 抽奖活动
 
+
 #### 素材&配置指引
 
 1. **建活动（基本信息）**
