@@ -101,9 +101,27 @@ PurchaseService.redeemGiftCode(player1,"TestRedeemGiftCode1001",(result)=>{
 
 **各游戏活动的配置流程如下：**
 
-| **第一步**选择游戏，【[游戏礼包](https://portal.ark.online/#/admin/prop-list)】处配置道具 | →                                                       | **第二步**【[游戏活动](https://portal.ark.online/#/admin/active-template)】处新增活动模板 | →                                                       | **第三步**在新增活动模板上配置规则                      | →    | **第四步**复制活动模板链接 | →    | **第五步**发布公告，选择活动类型，将链接复制到活动处 |
-| ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------------------------------- | ---- | -------------------------- | ---- | ---------------------------------------------------- |
-| ![img](https://arkimg.ark.online/1725523305970-67.webp)      | ![img](https://arkimg.ark.online/1725523305971-68.webp) | ![img](https://arkimg.ark.online/1725523305971-69.webp)      | ![img](https://arkimg.ark.online/1725523305971-70.webp) | ![img](https://arkimg.ark.online/1725523305971-71.webp) |      |                            |      |                                                      |
+
+**第一步**选择游戏，【[游戏礼包](https://portal.ark.online/#/admin/prop-list)】处配置道具
+
+![img](https://arkimg.ark.online/1725523305970-67.webp)   
+
+**第二步**【[游戏活动](https://portal.ark.online/#/admin/active-template)】处新增活动模板 
+
+![img](https://arkimg.ark.online/1725523305971-68.webp)
+
+**第三步**在新增活动模板上配置规则
+
+ ![img](https://arkimg.ark.online/1725523305971-69.webp)
+
+**第四步**复制活动模板链接
+
+![img](https://arkimg.ark.online/1725523305971-70.webp)
+
+**第五步**发布公告，选择活动类型，将链接复制到活动处 
+
+![img](https://arkimg.ark.online/1725523305971-71.webp)
+                                                  |
 
 **展示在233乐园的活动模板示例：**
 
