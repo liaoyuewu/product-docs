@@ -51,34 +51,40 @@
 > 例子：当创作者开发了一个包含3个场景A、B、C的游戏，创作者在【默认加载界面】选择【自定义默认加载界面】并进行了编辑，此时提审通过后A、B、C三个场景都会应用此次编辑的配置。若创作者在此基础上，又在【场景加载界面】选择了场景A及【自定义场景加载界面】并进行编辑，提审通过后A将单独应用此次的配置。
 
 1. 提审游戏，进入游戏信息的编辑页面，在【其他设置-场景信息】的右上角找到【编辑】按钮
+
 ![image](https://qn-cdn.233leyuan.com/athena/online/f07f2f67ea7f46649d4c47bd3505533c_374668627.webp)
 
 2. 选择对默认加载界面进行编辑
-   - 选择使用官方提供：此时只能查看，不能编辑文案或是修改背景图
-![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)
 
-   - 选择自定义默认加载界面：此时可上传背景图，推荐尺寸1080x1920，大小不要超过1M；可编辑至多5条文案，每条文案不能超过30字，并在预览图中查看文案轮播效果
-![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)
+| 选择使用官方提供：此时只能查看，不能编辑文案或是修改背景图 | 选择自定义默认加载界面：此时可上传背景图 |
+| -------------------------- | -------------------- |
+|![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)|![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)|
 
-   - 点击一键同步素材，可将默认语言的加载背景图同步至其他语言；点击一键翻译，可将默认语言的加载文案同步至其他语言。注意有些简短的中文翻译成其他语言后可能会超过长度限制哦！
+> 推荐尺寸1080x1920，大小不要超过1M；可编辑至多5条文案，每条文案不能超过30字，并在预览图中查看文案轮播效果
+
+点击一键同步素材，可将默认语言的加载背景图同步至其他语言；点击一键翻译，可将默认语言翻译为其他语言，注意有些简短的中文翻译成其他语言后可能会超过长度限制哦！
+
 ![image](https://qn-cdn.233leyuan.com/athena/online/923750b502264deaa465b83b0da1a749_374668630.webp)
 
 3. 编辑场景加载界面
-   - 使用默认配置：表示该场景不进行单独配置，使用当前游戏的默认加载界面
-![image](https://qn-cdn.233leyuan.com/athena/online/88bb594fec8c498aa2f43f367d898d71_374668631.webp)
 
-   - 自定义场景加载界面：
-![image](https://qn-cdn.233leyuan.com/athena/online/4ac8e130336d429a81409505f6693e4f_374668632.webp)
+| 使用默认配置 | 自定义场景加载界面 |
+| -------------------------- | -------------------- |
+|![image](https://qn-cdn.233leyuan.com/athena/online/88bb594fec8c498aa2f43f367d898d71_374668631.webp)|![image](https://qn-cdn.233leyuan.com/athena/online/4ac8e130336d429a81409505f6693e4f_374668632.webp)|
 
 4. 点击【提交】按钮，提交审核，此时在【其他设置-场景信息】出现【审核中】标志，审核中不可再进行编辑，游戏提审不必等待加载界面的审核完成，若游戏上线后，加载界面处于审核中或未过审，游戏将使用官方配置，加载界面审核通过后将直接应用在游戏中。
+
 ![image](https://qn-cdn.233leyuan.com/athena/online/c3556a69e8f341dbb0dd168530e775e0_374668633.webp)
 
 5. 审核成功或审核失败：创作者将在系统通知中收到加载界面的审核结果
+
 ![image](https://qn-cdn.233leyuan.com/athena/online/e6073341b7fe400f8ce9ba78ca8c0365_374668634.webp)
 ![image](https://qn-cdn.233leyuan.com/athena/online/41c0e9013db84c87b05a9f1b397d3a0a_374668637.webp)
 ![image](https://qn-cdn.233leyuan.com/athena/online/0130b32f13514d5699f562469790a270_374668635.webp)
 ![image](https://qn-cdn.233leyuan.com/athena/online/142d80ce097b4623b76137e6204e7930_374668636.webp)
+
 6. 游戏发版后，创作者可以点击版本管理，操作处会有【编辑加载界面】的按钮，点击可打开加载界面的编辑窗口。若当前版本游戏存在处于审核中的加载界面配置，则不能提交。
+
 ![image](https://qn-cdn.233leyuan.com/athena/online/49b2b8558a4f40469dddb70606dc4bb2_374668638.webp)
 
 ## 版本更新
