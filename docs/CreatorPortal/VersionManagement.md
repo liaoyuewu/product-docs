@@ -58,7 +58,7 @@
 
 | 选择使用官方提供：此时只能查看，不能编辑文案或是修改背景图 | 选择自定义默认加载界面：此时可上传背景图 |
 | -------------------------- | -------------------- |
-|![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)|![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)|
+|![image](https://qn-cdn.233leyuan.com/athena/online/4afd3540e37344d187098fad4d5f5a0d_374668628.webp)|![image](https://qn-cdn.233leyuan.com/athena/online/369bb3eb566b458a9ea4816d3adeac28_374668629.webp)|
 
 > 推荐尺寸1080x1920，大小不要超过1M；可编辑至多5条文案，每条文案不能超过30字，并在预览图中查看文案轮播效果
 
