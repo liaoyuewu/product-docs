@@ -287,6 +287,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         collapsible: true,
         collapsed: true,
         items: [
+          { text: 'v0.39.0.0', link: '/ReleaseNote/v0.39.0.0.md' },
           { text: 'v0.37.0.9', link: '/ReleaseNote/v0.37.0.9.md' },
           { text: 'v0.37.0.8', link: '/ReleaseNote/v0.37.0.8.md' },
           { text: 'v0.37.0.7', link: '/ReleaseNote/v0.37.0.7.md' },
@@ -415,17 +416,17 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: '主版本',
+        text: '038 版本',
         items: [
           {
-
-            text: '038 版本',
-            link: 'https://docs-038.ark.online/'
+            text: '主版本',
+            link: 'https://docs.ark.online/'
           },
          {
             text: '036 版本',
             link: 'https://docs-036.ark.online/'
           }     
+
         ]
       }
     ],

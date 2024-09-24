@@ -563,7 +563,7 @@ Skybox.cloudDensity = 1;
 Skybox.cloudSpeed = 1;
 ```
 
-### 云
+### 扰动
 - 是否开启扰动：扰动开启时,会对天空球贴图进行颜色的扰动处理.
 - 相关接口：
 

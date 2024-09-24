@@ -8,7 +8,9 @@
 
 【热武器】是一个发射类武器的功能框架，框架内实现发射、换弹、瞄准、上膛、射击精度、后坐力六个功能模块来模拟发射类武器的工作机制。开发者可以决定是否启用这些功能并自定义功能中相关的各种属性。通过不同的属性配置来模拟不同类型武器的表现。【热武器】在工作流中会触发关键事件方便用户准确把握【热武器】当前的工作状态，同时执行对应的游戏逻辑：例如开火时播放枪口特效，发射子弹，播放音效等等。你可以在【本地资源库】中的【游戏功能对象】栏中找到【热武器】。
 
-![img](https://arkimg.ark.online/1684045718029-20.webp)
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/ffed47c158fb4d19a35e91897659f8a0_367152794.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/514e9f29192e48878235971bdd1132c3_367152807.webp)|
 
 # 创建热武器
 
@@ -18,15 +20,21 @@
 
 1. 在【本地资源库】的【游戏功能对象】栏中找到【热武器】
 
-![img](https://arkimg.ark.online/1684045718023-1.webp)
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/ffed47c158fb4d19a35e91897659f8a0_367152794.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/514e9f29192e48878235971bdd1132c3_367152807.webp)|
 
 2. 将对象拖入到场景中或者【对象管理器】
 
-![img](https://arkimg.ark.online/1684045718023-2.webp)
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/7667f29b4334450eb273795dd8ab4e69_367152795.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/d62727746a364bc8a5b9f8236ccd7c7d_367152808.webp)|
 
 3. 在右侧【对象管理器】中【对象】栏找到对应的【热武器】对象并自定义它的属性
 
-![img](https://arkimg.ark.online/1684045718024-3.webp)![img](https://arkimg.ark.online/1684045718024-4.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240830134549852.png) | ![](https://arkimg.ark.online/image-20240830134611550.png) |
 
 ## 通过脚本创建：
 
@@ -53,13 +61,18 @@ protected async onStart(): Promise<void> {
 
 此外部分属性是动态变化的，只能在代码中读写。`currentBullet`属性用来表示弹夹中剩余弹药数量。
 
-![img](https://arkimg.ark.online/1684045718024-5.webp)
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/f78cdcd7ef5445d2b7891ac1bddd403a_367152797.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/0610e00b206e498aa320df73dc64ba10_367152810.webp)|
 
 - 发射动作绑定：热武器开火时播放的动作（支持资源库拖拽入参）
 - 发射模式：
   - 单发：每次执行开火时，发射1次后自动停火。
   - 连发：每次执行开火时，发射【连发次数】次后停火。
-	![img](https://arkimg.ark.online/1684045718024-6.webp)
+  - 
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/5def0f49e47e47b79048824859b6b8d1_367152798.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/9603f72840d74c1d85f35bdb73e00502_367152811.webp)|
 
   - 全自动：每次执行开火时持续发射，直到手动调用停火或者弹夹子弹为0；
 - 发射间隔：热武器发射两发子弹的最小间隔时间
@@ -67,7 +80,10 @@ protected async onStart(): Promise<void> {
 - 多重射击：每发子弹的分裂数
 - 屏幕中心发射：子弹会在摄像机中心位置生成
   - 发射偏移调整：子弹生成位置偏移
-	![img](https://arkimg.ark.online/1684045718024-7.webp)
+  - 
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/41eb360741b84001b51f43afd04115c0_367152799.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/7207213a08294f839cd2fe7a56491061_367152812.webp)|
 
 ```TypeScript
 // 获取热武器对象
@@ -99,19 +115,24 @@ weapon.fireComponent.multipleShot = 5;
 
 此外部分属性是动态变化的，只能在代码中读写。`dispersionHalfAngleIncreaseSpeed`属性表示范围扩张速度。`dispersionHalfAngleIncreasePerShot`属性表示子弹散布范围半径在每次射击后的扩张值。
 
-![img](https://arkimg.ark.online/1684045718024-8.webp)
+| 中文示例    | 英文示例                                                         |
+| ----------- | ------------------------------------------------------------ |
+|![img](https://qn-cdn.233leyuan.com/athena/online/4ec5679847cb45a3af2d45cfd39a0fed_367152800.webp)|![img](https://qn-cdn.233leyuan.com/athena/online/35f13113dd114fe5b59f0ea2b04b7209_367152813.webp)|
 
 - 散布范围设置：默认散布范围半径，不开火时范围会向默认移动
+
 - 最大散布范围：最大散布范围半径
+
 - 最小散布范围：最小散布范围半径，提供上面两个参数的最低锚定值，可作为切换使用
+
 - 范围收缩速度：散布范围收缩的速度，过大会使范围无法扩张
+
 - 范围扩张速度：散布范围扩展的速度，过大会使范围扩张过快
 
-![img](https://arkimg.ark.online/1684045718024-9.webp)![img](https://arkimg.ark.online/1684045718024-10.webp)
+![image-20240829111451376](https://arkimg.ark.online/image-20240829111451376.png)
 
-![image-20230514143221095](https://arkimg.ark.online/image-20230514143221095.webp)
+<video src="https://arkimg.ark.online/20240829-112343.mp4"></video>
 
-![20230328-103749](https://arkimg.ark.online/20230328-103749-1684051023070-4.gif)
 
 ```TypeScript
 // 获取热武器对象
@@ -134,7 +155,9 @@ weapon.accuracyOfFireComponent.dispersionHalfAngleIncreaseSpeed = 10;
 
 【瞄准】是热武器工作流中可选的功能，属性面板上可以选择该功能是否启用。功能中定义了与瞄准相关的属性并提供相关接口。【瞄准】功能在【热武器】对象中作为一个功能组件对象存在：`aimComponent`，通过它开发者可以修改瞄准时的摄像机距离，切换瞄准状态。
 
-![img](https://arkimg.ark.online/1684045718025-12.webp)![img](https://arkimg.ark.online/1684045718025-13.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240829112756278.png) | ![](https://arkimg.ark.online/image-20240829112817949.png) |
 
 - 瞄准模式：
   
@@ -142,7 +165,10 @@ weapon.accuracyOfFireComponent.dispersionHalfAngleIncreaseSpeed = 10;
 
   - 摄像机距离调整：瞄准时摄像机杆的长度变化
   
-    ![image-20230514143412765](https://arkimg.ark.online/image-20230514143412765.webp)
+
+![image-20240829113304710](https://arkimg.ark.online/image-20240829113304710.png)
+
+
 
 ```TypeScript
 // 获取热武器对象
@@ -163,7 +189,11 @@ weapon.aimComponent.enableAiming(true);
 
 【上膛】是热武器工作流中可选的功能，属性面板上可以选择该功能是否启用。功能中定义了与上膛相关的属性并提供相关接口。【上膛】功能在【热武器】对象中作为一个功能组件对象存在：`loadComponent`，通过它开发者可以对上膛表现进行设置。`animationAssetId`属性用来指定上膛动作；`loadDuration`属性用来设置上膛时间；`loadAfterFireEnabled`属性用来设置是否每次开火都需要上膛（霰弹枪，狙击枪）；
 
-![img](https://arkimg.ark.online/1684045718025-14.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240829113505589.png) | ![](https://arkimg.ark.online/image-20240829113440863.png) |
+
+
 
 - 上膛动作绑定：热武器上膛时播放绑定的动作（支持资源库拖拽）
 - 上膛时间：上膛动作完成的时间
@@ -191,7 +221,9 @@ weapon.loadComponent.loadAfterFireEnabled = true;
 
 【换弹】是热武器工作流中可选的功能，属性面板上可以选择该功能是否启用。功能中定义了与换弹相关的属性并提供相关接口。【换弹】功能在【热武器】对象中作为一个功能组件对象存在：`reloadComponent`，通过它开发者可以对换弹表现进行设置。`animationAssetId`属性用来指定换弹动作；`reloadDuration`属性用来设置换弹时间；
 
-![img](https://arkimg.ark.online/1684045718025-15.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240829113620820.png) | ![](https://arkimg.ark.online/image-20240829113635186.png) |
 
 - 换弹动作绑定：热武器换弹时播放绑定的动作（资源库拖拽）
 - 换弹时间：换弹动作完成的时间
@@ -218,16 +250,18 @@ weapon.reloadComponent.reloadDuration = 0.5;
 
 此外部分属性是动态变化的，只能在代码中读写。`dispersionHalfAngleIncreaseSpeed`属性表示范围扩张速度。`dispersionHalfAngleIncreasePerShot`属性表示子弹散布范围半径在每次射击后的扩张值。
 
-![img](https://arkimg.ark.online/1684045718025-16.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240829113754644.png) | ![](https://arkimg.ark.online/image-20240829113729685.png) |
 
 - 水平偏移最小值/最大值：热武器每次发射时，摄像机会基于开火时摄像机位置，进行水平方向的旋转，偏移值从设定的区间内随机。
 - 垂直偏移最小值/最大值：热武器每次发射时，摄像机会基于开火时摄像机位置，进行垂直方向的旋转偏移，偏移值从设定的区间内随机。
 - 水平抖动最小值/最大值：热武器发射时，摄像机会基于开火时摄像机位置，进行水平方向的旋转，在单次开火后，摄像机会回到水平偏移后的位置，即摄像机水平抖动是一个表现，并不会影响枪械的最终位置
 - 垂直抖动最小值/最大值：热武器发射时，摄像机会基于开火时摄像机位置，进行垂直方向的旋转，在单次开火后，摄像机会回到垂直偏移后的位置，即摄像机垂直抖动是一个表现，并不会影响枪械的最终位置
 
-![image-20230514143556555](https://arkimg.ark.online/image-20230514143556555.webp)
+![](https://arkimg.ark.online/image-20240829115608196.png)
 
-![20230327-165923](https://arkimg.ark.online/20230327-165923-1684051142727-7.gif)
+<video src="https://arkimg.ark.online/20240829-123559.mp4"></video>
 
 ```TypeScript
 // 获取热武器对象
@@ -248,21 +282,19 @@ weapon.recoilForceComponent.maxVerticalJitter = 0.8;
 
 # 使用热武器
 
-## **热武器的工作流程图：**
-
-![weaponflow](https://arkimg.ark.online/weaponflow-1684051196671-10.webp)
-
 ## 获取热武器对象
 
 ### 【对象管理器】中【对象】栏下的【热武器】对象：
 
-**使用`asyncFindGameObjectById`接口通过【触发器】对象的gameObjectId去获取：**
+**使用`asyncFindGameObjectById`接口通过【热武器】对象的gameObjectId去获取：**
 
-1. 选中【热武器】对象后右键点击【复制对象ID】获取它的gameObjectId。此处注意区分【热武器】资源的gameObjectId和【热武器】对象的gameObjectId。
+1. 选中【热武器】对象后右键点击【复制对象ID】获取它的gameObjectId。此处注意区分【热武器】资源ID和【热武器】对象的gameObjectId。
 
-![img](https://arkimg.ark.online/1684045718025-18.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240829124946027.png) | ![](https://arkimg.ark.online/image-20240829125006622.png) |
 
-2. 将脚本拖入对象管理器下，用下列代码替换脚本中的`onStart`方法：代码将异步查找ID对应的对象以【热武器】对象进行接收。
+2. 将脚本拖入对象管理器下，用下列代码替换脚本中的`onStart`方法：代码将异步查找ID对应的对象以【热武器】对象进行初始化。
 
 ```TypeScript
 protected async onStart(): Promise<void> {
@@ -277,7 +309,10 @@ protected async onStart(): Promise<void> {
 
 1. 将脚本挂载到【热武器】对象下方
 
-![img](https://arkimg.ark.online/1684045718025-19.webp)
+| 中文示例                                                   | 英文示例                                                   |
+| ---------------------------------------------------------- | ---------------------------------------------------------- |
+| ![](https://arkimg.ark.online/image-20240829125151840.png) | ![](https://arkimg.ark.online/image-20240829125116389.png) |
+
 
 2. 在脚本的`onStart`方法中添加下列代码：代码获取脚本挂载的对象并以【热武器】对象进行接收
 
@@ -457,7 +492,7 @@ InputUtil.onKeyUp(Keys.B, async () => {
 
 ### **热武器的状态图：**
 
-![weaponState](https://arkimg.ark.online/weaponState.webp)
+![](https://arkimg.ark.online/image-20240829125814836.png)
 
 ```TypeScript
 enum HotWeaponState {
