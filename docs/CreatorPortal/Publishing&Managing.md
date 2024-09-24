@@ -61,11 +61,11 @@
 
 ### 绑定海外账号
 
-1. 登录[海外开发者平台](https://portal.gpark.fun)，点击右上角头像并复制token；
+1. 登录[海外创作者中心](https://portal.gpark.fun)，点击右上角头像并复制token；
 
 <img src="https://cdn.233xyx.com/athena/online/99a3246cbeb04ad1a4974e236cefa8a3_321840760.webp" alt="img" style="zoom:50%;" />
 
-2. 前往[国内开发者平台](https://portal.ark.online/#/admin/home)绑定海外账号，将海外的token复制到国内贴上
+2. 前往[国内创作者中心](https://portal.ark.online/#/admin/home)绑定海外账号，将海外的token复制到国内贴上
 
 ::: danger 注意
 

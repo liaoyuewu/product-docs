@@ -288,6 +288,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         collapsed: true,
         items: [
           { text: 'v0.39.0.0', link: '/ReleaseNote/v0.39.0.0.md' },
+          { text: 'v0.37.0.9', link: '/ReleaseNote/v0.37.0.9.md' },
+          { text: 'v0.37.0.8', link: '/ReleaseNote/v0.37.0.8.md' },
           { text: 'v0.37.0.7', link: '/ReleaseNote/v0.37.0.7.md' },
           { text: 'v0.37.0.6', link: '/ReleaseNote/v0.37.0.6.md' },
           { text: 'v0.37.0.5', link: '/ReleaseNote/v0.37.0.5.md' },
@@ -419,7 +421,12 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           {
             text: '主版本',
             link: 'https://docs.ark.online/'
-          }   
+          },
+         {
+            text: '036 版本',
+            link: 'https://docs-036.ark.online/'
+          }     
+
         ]
       }
     ],
