@@ -420,7 +420,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         link: 'https://forum.ark.online/'
       },
       {
-        text: '主版本版本',
+        text: '主版本',
         items: [
           
          {
