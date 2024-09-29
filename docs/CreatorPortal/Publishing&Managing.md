@@ -94,9 +94,8 @@ token有效期5min，若您想修改绑定账号，也可点击解绑按钮进�
 
 ### 本地化及发布
 
-可以使用编辑器的本地化工具完成游戏内容本地化，具体使用方式可前往[游戏本地化](https://docs.ark.online/Localization/GameLanguageLocalization.html)查看
+编辑器提供本地化工具，可前往[游戏本地化](https://docs.ark.online/Localization/GameLanguageLocalization.html)学习如何将您的游戏翻译成其他语言；
 
-<img src="https://arkimg.ark.online/1722253246499-50.gif" alt="img" style="zoom:50%;" />
 
 发布地区勾选Gpark，即可将您的游戏同步至海外，可以绑定已有的游戏或者发布为新游戏；
 
