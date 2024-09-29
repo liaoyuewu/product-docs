@@ -104,8 +104,8 @@ let bool2 = joystick.controlByMouseEnable
 InputUtil.mouseLockOptionEnabled=false
 //设置为允许玩家使用shift切换鼠标锁定状态
 InputUtil.mouseLockOptionEnabled=true
-//直接设置玩家进入鼠标锁定状态
-InputUtil.isLockMouse=false
 //直接设置玩家结束鼠标锁定状态
+InputUtil.isLockMouse=false
+//直接设置玩家进入鼠标锁定状态
 InputUtil.isLockMouse=true
 ```
