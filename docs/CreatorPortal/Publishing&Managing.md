@@ -61,6 +61,20 @@
 
 ### 绑定海外账号
 
+#### 首次注册海外开发者账号
+
+您无需进行额外操作，游戏信息填写完成并提审后，系统将自动为您创建并绑定一个海外开发者账号，该账号登录方式将通过站内信&短信发送给您；
+
+您可通过访问[海外创作者中心](https://portal.gpark.fun)，使用账密登录；
+
+<img src="https://qn-cdn.233leyuan.com/athena/online/98e88ac4eab84ac6bfe7ff11fcaeb079_387361110.webp" alt="img" style="zoom:50%;" />
+
+也可直接通过点击国内创作者中心右上角海外版切换至海外；
+
+<img src="https://qn-cdn.233leyuan.com/athena/online/cd6b90c35d4d4924817fa98c0327adc4_387361109.webp" alt="img" style="zoom:50%;" />
+
+#### 已有海外开发者账号
+
 1. 登录[海外创作者中心](https://portal.gpark.fun)，点击右上角头像并复制token；
 
 <img src="https://cdn.233xyx.com/athena/online/99a3246cbeb04ad1a4974e236cefa8a3_321840760.webp" alt="img" style="zoom:50%;" />
