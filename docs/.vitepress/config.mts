@@ -221,7 +221,7 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         collapsed: true,
         items: [
           { text: '数据存储', link: '/Scripting/DataStorage.md' },
-          { text: '内存存储', link: '/Scripting/DataStorage.md' }
+          { text: '内存存储', link: '/Scripting/MemoryStorage.md' }
         ]
       },
       {
