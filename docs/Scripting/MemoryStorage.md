@@ -188,10 +188,11 @@ export default class QueuingSystem extends Script {
 }
 ```
 
-::: tip
+::: danger
 注意到创建队列的时候，队列名后面一个参数20（如果您不输入，那么默认为30）。
-这代表队列中的项目被Read时的隐藏时间，根本原因是队列项被Read并不会立即消除，而是需要继续调用Remove才可删除项。
-所以，当你Read出一个项时，该项在20秒内为你所有，其他人暂时不可以读出该项。若您在20秒内没有删除该项，那么20秒后它就会被放回队列中的原本位置，并且你再无法调用Remove删除它，同时其他人可以读出该项。
+这代表队列中的项目被Read时的隐藏时间，**根本原因是队列项被Read并不会立即消除**，而是需要继续调用Remove才可删除项。
+所以，当你Read出一个项时，该项在20秒内为你所有，其他人暂时不可以读出该项。
+若您在20秒内没有删除该项，那么20秒后它就会被放回队列中的原本位置，并且你再无法调用Remove删除它，同时其他人可以读出该项。
 :::
 
 ### 4.2 添加队列项
@@ -217,11 +218,19 @@ async addPlayerToQueue(playerName: string): Promise<void> {
 ::: tip
 优先级的作用是什么？
 优先级代表该项在队列中的位置，优先级越高的越先出队，如下图所示。
+如果您不更改优先级，则默认为0，此时队列和正常队列功能相同。
 :::
 
 ![](https://qn-cdn.233leyuan.com/athena/online/2495e6c35d6e467b996666a25308c9dd_387397263.webp)
 
 ### 4.3 读出项
+
+读出项的API有三个参数，分别为：输出项的个数，当数量不够是否全部读出。
+可以参照如下图片，得出队列读出项的内容。
+
+| 中文示例 | 英文示例 |
+| - | - |
+| ![](https://qn-cdn.233leyuan.com/athena/online/1a10c86a1567448ba695636762d3b151_395762805.webp) | ![](https://qn-cdn.233leyuan.com/athena/online/95a96354b12c401e851104ea0e737085_395762806.webp) |
 
 ```ts
 lastReadResult: MemoryStorageExtend.QueueReadDataResult = null;
@@ -232,7 +241,7 @@ lastReadResult: MemoryStorageExtend.QueueReadDataResult = null;
  */
 @mw.RemoteFunction(mw.Server)
 async readPlayerFromQueue(count: number): Promise<void> {
-    this.lastReadResult = await this.playersQueue.asyncReadData(count, false, 0);
+    this.lastReadResult = await this.playersQueue.asyncReadData(count, false);
 
     if (this.lastReadResult.code == MemoryStorageExtend.MemoryStorageResultCode.Success) {
         // 遍历读取的玩家
@@ -245,16 +254,9 @@ async readPlayerFromQueue(count: number): Promise<void> {
 }
 ```
 
-读出项的API有三个参数，分别为：输出项的个数，当数量不够是否全部读出，数量不够的等待时间。
-可以参照如下图片，得出队列读出项的内容。
-
-| 中文示例 | 英文示例 |
-| - | - |
-| ![](https://qn-cdn.233leyuan.com/athena/online/fcbeebeb1dc747ce868ca94d5a2e6fc8_387397535.webp) | ![](https://qn-cdn.233leyuan.com/athena/online/2620c4d522a2403c885b4b1f6716de72_387397534.webp) |
-
 ### 4.4 删除（读出的）项
 
-读出项之后，会返回一个指向你读出项的指针，使用该指针为入参调用删除数据API，即可删除读出的数据。
+读出项之后，会返回一个不可被拆解的合集（接口里被称为id），使用该合集为入参调用删除数据API，即可删除读出的数据（即该合集的所有数据）。
 
 ```ts
 lastReadResult: MemoryStorageExtend.QueueReadDataResult = null;
@@ -262,7 +264,7 @@ lastReadResult: MemoryStorageExtend.QueueReadDataResult = null;
 /**
  * 从队列中删除玩家
  * @param playerName 玩家名
- * @param id 数据指针
+ * @param id 存储读出来的项的合集
  */
 @mw.RemoteFunction(mw.Server)
 async removePlayerFromQueue(): Promise<void> {
