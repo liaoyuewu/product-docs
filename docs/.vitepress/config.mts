@@ -175,7 +175,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           { text: 'IK锚点', link: '/GameplayObjects/IKAnchor.md' },
           { text: '特效', link: '/GameplayObjects/Effect.md' },
           { text: '点光源', link: '/GameplayObjects/PointLight.md' },
-          { text: '粒子发射器', link: '/GameplayObjects/ParticleEmitter.md' }
+          { text: '粒子发射器', link: '/GameplayObjects/ParticleEmitter.md' },
+          { text: '寻路链接', link: '/GameplayObjects/NavLink.md' }
         ]
       },
       {
