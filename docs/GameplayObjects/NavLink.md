@@ -23,7 +23,7 @@
 
 | 中文示例 | 英文示例 |
 | - | - |
-| ![](https://qn-cdn.233leyuan.com/online/vAyCJEsbBp7S1728623626305.mp4) | ![](https://qn-cdn.233leyuan.com/online/xiCgHUG5ob8Z1728623628009.mp4) |
+| <video controls src="https://qn-cdn.233leyuan.com/online/vAyCJEsbBp7S1728623626305.mp4"></video> | <video controls src="https://qn-cdn.233leyuan.com/online/xiCgHUG5ob8Z1728623628009.mp4"></video> |
 
 ::: warning Precautions
 寻路链接只能在相同或相邻的tile中进行链接，跨tile时链接将会失效。
