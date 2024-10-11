@@ -26,7 +26,8 @@
 | ![](https://qn-cdn.233leyuan.com/online/vAyCJEsbBp7S1728623626305.mp4) | ![](https://qn-cdn.233leyuan.com/online/xiCgHUG5ob8Z1728623628009.mp4) |
 
 ::: warning Precautions
-寻路链接只能在相同或相邻的tile中进行链接，跨tile时链接将会失效.tile可以在世界设置中打开/关闭显示
+寻路链接只能在相同或相邻的tile中进行链接，跨tile时链接将会失效。
+tile可以在世界设置中打开/关闭显示。
 :::
 
 ### step.3
