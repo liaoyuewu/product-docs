@@ -175,7 +175,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
           { text: 'IK锚点', link: '/GameplayObjects/IKAnchor.md' },
           { text: '特效', link: '/GameplayObjects/Effect.md' },
           { text: '点光源', link: '/GameplayObjects/PointLight.md' },
-          { text: '粒子发射器', link: '/GameplayObjects/ParticleEmitter.md' }
+          { text: '粒子发射器', link: '/GameplayObjects/ParticleEmitter.md' },
+          { text: '寻路链接', link: '/GameplayObjects/NavLink.md' }
         ]
       },
       {
@@ -220,7 +221,8 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         collapsible: true,
         collapsed: true,
         items: [
-          { text: '数据存储', link: '/Scripting/DataStorage.md' }
+          { text: '数据存储', link: '/Scripting/DataStorage.md' },
+          { text: '内存存储', link: '/Scripting/MemoryStorage.md' }
         ]
       },
       {
@@ -287,6 +289,10 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         collapsible: true,
         collapsed: true,
         items: [
+          { text: 'v0.40.0.3', link: '/ReleaseNote/v0.40.0.3.md' },
+          { text: 'v0.40.0.2', link: '/ReleaseNote/v0.40.0.2.md' },
+          { text: 'v0.40.0.1', link: '/ReleaseNote/v0.40.0.1.md' },
+          { text: 'v0.40.0.0', link: '/ReleaseNote/v0.40.0.0.md' },
           { text: 'v0.39.0.5', link: '/ReleaseNote/v0.39.0.5.md' },
           { text: 'v0.39.0.4', link: '/ReleaseNote/v0.39.0.4.md' },
           { text: 'v0.39.0.3', link: '/ReleaseNote/v0.39.0.3.md' },
@@ -424,13 +430,9 @@ export default defineConfigWithTheme<DefaultTheme.Config>({
         text: '主版本',
         items: [
           
-         {
-            text: '037 版本',
-            link: 'https://docs-037.ark.online/'
-          },
 {
-            text: '040 版本',
-            link: 'https://docs-040.ark.online/'
+            text: '039 版本',
+            link: 'https://docs-038.ark.online/'
           }   
 
         ]
