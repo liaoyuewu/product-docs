@@ -1,8 +1,9 @@
+# 角色编辑器服务
+
 `AvatarEditorService`是一个包含角色编辑器相关功能的服务。它给开发者提供修改玩家角色形象、请求玩家外观库存、购买外观商品和请求外观商品目录的方法。该服务仅在客户端生效。
+## 默认角色编辑器
 
-# 默认角色编辑器
-
-## 平台入口
+### 平台入口
 
 游戏界面左上角寻找“去装扮”按钮，点击按钮打开角色编辑器。该按钮可以通过接口动态控制显隐以便开发者自行决定是否接入平台默认角色编辑器。使用示例如下所示：
 
@@ -13,7 +14,7 @@ AvatarEditorService.setAvatarEditorButtonVisible(false);
 
 ![img](https://arkimg.ark.online/1730860472575-52.jpeg)
 
-## 打开角色编辑器
+### 打开角色编辑器
 
 `AvatarEditorService`提供了一个默认角色编辑器，开发者可以通过下列两个方法来打开/关闭它：
 
@@ -36,7 +37,7 @@ InputUtil.onKeyDown(Keys.Two, () => {
 
 ![img](https://arkimg.ark.online/1730876686239-1.png)
 
-## 形象展示区
+### 形象展示区
 
 打开后会加载页面如上图所示。角色编辑器界面默认会在UI顶层显示，需注意可能会挡住游戏UI。此外过程中会操作玩家当前角色并修改朝向模式和摄像机配置（但并不影响其它逻辑）。默认角色编辑器左侧为角色形象展示区（展示的就是玩家角色），支持快捷切换为二次元男/女和平台形象如下图所示。
 
@@ -51,7 +52,7 @@ InputUtil.onKeyDown(Keys.Two, () => {
 
 
 
-## 外观商城
+### 外观商城
 
 角色编辑器右侧是是商品页面，售卖平台市场中修改角色形象的外观商品。商品页面一共三个分类分别是“捏脸”、“商城”和“我的”，分别展示不同商品数据。
 
@@ -80,7 +81,7 @@ InputUtil.onKeyDown(Keys.Two, () => {
 
 ![img](https://arkimg.ark.online/1730877634927-22.png)
 
-## 角色编辑器事件
+### 角色编辑器事件
 
 默认角色编辑器在运行时可以通过`AvatarEditorService.avatarServiceDelegate`来监听商城中各种行为事件，开发者可以绑定函数来针对抛出的不同事件做相应的处理。事件列表如下所示。
 
@@ -107,9 +108,9 @@ mw.AvatarEditorService.avatarServiceDelegate.add((eventName: string, ...params: 
 });
 ```
 
-# 物品信息
+## 物品信息
 
-## 数据项
+### 数据项
 
 `AvatarEditorService`提供了一系列商品信息的查询接口，便于开发者利用这些信息制作自己的角色编辑器和外观商城。外观商品的数据结构如下所示：
 
@@ -202,7 +203,7 @@ let image: Image = this.uiWidgetBase.findChildByPath('RootCanvas/Iamge') as Imag
 image.imageInfo.setByAssetIcon("资源ID", AssetIconSize.Icon_64px);
 ```
 
-## 请求物品数据
+### 请求物品数据
 
 请求物品数据接口存在频率限制：每隔100ms可以调用一次。此外接口限制在客户端使用，因此客户端执行换装后，开发者需要使用`Character.syncDescription()`进行外观数据的同步。
 
@@ -286,7 +287,7 @@ let result = await AvatarEditorService.asyncGetCommodityByAssetIds(["340302"]);
 let result = await AvatarEditorService.asyncGetCommodityListByItemIds([5305]);
 ```
 
-## 解析请求结果
+### 解析请求结果
 
 请求物品数据返回的结果是`CommodityListObj`，它是包含一个商品数据列表、错误码、错误信息的数据结构。
 
@@ -298,9 +299,9 @@ let result = await AvatarEditorService.asyncGetCommodityListByItemIds([5305]);
 | errorCode: number | 请求返回的错误码，开发者可以根据结果决定是否重新请求数据，结构如下：`{    */**请求成功\*/*    Success = 200, }` |
 | message: string   | 返回的错误信息，可以用于文本提示。                           |
 
-# 购买支付
+## 购买支付
 
-## 货币余额
+### 货币余额
 
 购买角色编辑器物品需要消耗玩家余额，通常在商城页面需要对玩家余额不足的情况进行提示，玩家根据自己的选择进行充值或者放弃本次购买。`AvatarEditorService`提供玩家余额的查询接口和重置接口便于开发者处理购买过程中出现的余额不足情况。
 
@@ -337,7 +338,7 @@ InputUtil.onKeyDown(Keys.One, () => {
 });
 ```
 
-## 下单发货
+### 下单发货
 
 当用户选好商品后可以使用`AvatarEditorService.placeOrder()`下单商品。开发者需要传入一个商品列表（支持一次购买多个商品）。商品ID可以从物品数据中`commodityId`获取。
 
