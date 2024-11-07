@@ -168,10 +168,10 @@
     通过 API 将数据文件中存储的数据应用至角色。
 
       ```ts
-      //调用工程内容-角色数据文件资源ID改变人形对象对应数据
-      LoadEditorDataByGuid("<del>GUID</del>")
+      //使用工程内容-角色数据文件资源ID改变人形对象对应数据
+      Player.localPlayer.character.setDescription(["资源ID"]);
       //将角色形象同步至多端
-      SyncDIYDataBegin()
+      Player.localPlayer.character.syncDescription();
       ```
 
 ### 2.3 角色编辑数据的导入与导出
